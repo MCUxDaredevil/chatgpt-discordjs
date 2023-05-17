@@ -1,0 +1,39 @@
+{
+  "name": "discordgpt",
+  "version": "1.0.0",
+  "description": "Discord bot to interact with ChatGPT",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node main.js",
+    "dev": "nodemon main.js"
+  },
+  "author": "MCUxDaredevil",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "canvas": "^2.11.0",
+    "colors": "^1.4.0",
+    "discord.js": "^14.10.2",
+    "dotenv": "^16.0.3",
+    "form-data": "^4.0.0",
+    "formdata-node": "^5.0.0",
+    "node-fetch": "^3.3.1",
+    "openai": "^3.2.1",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "nodemon": "^2.0.21",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "commands/*",
+      "events/*"
+    ],
+    "delay": 5000
+  }
+}
